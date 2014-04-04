@@ -123,7 +123,7 @@
 						title: '<ion:title />',
 						subtitle: '<ion:subtitle />',
 						description: '<ion:description />',
-						color: '<ion:category_color />',
+						color: '<ion:event_category_color />',
 						textColor : '#fff'
 					},
 					</ion:events>
@@ -160,7 +160,7 @@
 <div id="legend_calendar" style="border: 1px solid #CCCCCC; border-radius: 5px; padding: 10px; margin-bottom: 20px;">
 	<ion:eventcalendar>
 		<ion:categories>
-			<div id="category_<ion:category_id/>" style="display: inline-block; padding: 0 10px;">
+			<div id="category_<ion:id_category/>" style="display: inline-block; padding: 0 10px;">
 			<div class="squarecolor" style="display: inline-block; width:16px; height:16px; background:<ion:category_color/>;">&nbsp;</div>
 			<ion:category_name/>
 			</div>
