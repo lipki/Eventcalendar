@@ -1,12 +1,13 @@
+<?php $config = Modules()->get_module_config('Eventcalendar'); ?>
 <!DOCTYPE html>
 <html lang="<ion:current_lang />">
     <head>
         <meta charset="utf-8">
-        <link rel='stylesheet' type='text/css' href='<?= config_item('module_eventcalendar_assets_folder') ?>css/fullcalendar.css' />
-        <link rel='stylesheet' type='text/css' href='<?= config_item('module_eventcalendar_assets_folder') ?>css/fullcalendar.print.css' media='print' />
-        <script type='text/javascript' src='<?= config_item('module_eventcalendar_assets_folder') ?>js/jquery-1.7.2.min.js'></script>
-        <script type='text/javascript' src='<?= config_item('module_eventcalendar_assets_folder') ?>js/fullcalendar.min.js'></script>
-        <script type='text/javascript' src='<?= config_item('module_eventcalendar_assets_folder') ?>js/wtooltip.min.js'></script>
+        <link rel='stylesheet' type='text/css' href='<?= $config['module_eventcalendar_assets_folder'] ?>css/fullcalendar.css' />
+        <link rel='stylesheet' type='text/css' href='<?= $config['module_eventcalendar_assets_folder'] ?>css/fullcalendar.print.css' media='print' />
+        <script type='text/javascript' src='<?= $config['module_eventcalendar_assets_folder'] ?>js/jquery-1.7.2.min.js'></script>
+        <script type='text/javascript' src='<?= $config['module_eventcalendar_assets_folder'] ?>js/fullcalendar.min.js'></script>
+        <script type='text/javascript' src='<?= $config['module_eventcalendar_assets_folder'] ?>js/wtooltip.min.js'></script>
         <script type='text/javascript'>
             $(document).ready(function() {
                 var date = new Date();

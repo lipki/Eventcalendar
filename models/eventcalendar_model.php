@@ -75,7 +75,7 @@ class Eventcalendar_model extends Base_model {
     **/
     function save($data, $lang_data) 
     {
-        $user = $this->connect->get_current_user();
+        $user = User()->get_user();
         
         if( ! $data[$this->pk_name] OR $data[$this->pk_name] == '') {
             $data['created'] = $data['updated'] = date('Y-m-d H:i:s');
